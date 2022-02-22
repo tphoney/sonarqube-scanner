@@ -5,7 +5,7 @@ platform:
   arch: amd64
 steps:
 - name: publish
-  image: plugins/docker:18
+  image: plugins/docker:20
   settings:
     auto_tag: true
     auto_tag_suffix: linux-amd64
@@ -21,7 +21,7 @@ steps:
       exclude:
       - pull_request
 - name: publish-v1.0.3
-  image: plugins/docker:18
+  image: plugins/docker:20
   settings:
     auto_tag: true
     auto_tag_suffix: v1.0.3
